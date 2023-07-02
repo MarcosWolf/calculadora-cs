@@ -75,6 +75,11 @@ namespace calculadora_cs
             return Math.Pow(a, b);
         }
 
+        public static double calcRooting(double a, double b)
+        {
+            return Math.Pow(b, 1 / a);
+        }
+
         public static void interfaceCalculation(char menuChoice)
         {
             int auxChoice = (int)Char.GetNumericValue(menuChoice);
@@ -126,13 +131,31 @@ namespace calculadora_cs
                 Console.Write("Insira o expoente: ");
                 double auxB = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("\nO resultado é:" + calcPotentiation(auxA, auxB));
+                Console.WriteLine("\nO resultado é: " + calcPotentiation(auxA, auxB));
+
+                Console.Write("\nPressione qualquer tecla para continuar");
+                Console.ReadKey();
+            } else if (auxChoice == 8)
+            {
+                Console.Write("Insira o índice: ");
+                double auxA = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Insira o radicando: ");
+                double auxB = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("\nO resultado é: " + calcRooting(auxA, auxB));
 
                 Console.Write("\nPressione qualquer tecla para continuar");
                 Console.ReadKey();
             } else if (auxChoice == 0)
             {
                 System.Environment.Exit(1);
+            } else
+            {
+                Console.Clear();
+                Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
+                Console.WriteLine("Opção incorreta");
+                Console.Write("\nPressione qualquer tecla para continuar");
+                Console.ReadKey();
             }
         }
 
