@@ -30,6 +30,30 @@ namespace calculadora_cs
             return (a * b);
         }
 
+        public static int calcLcm(int a, int b)
+        {
+            int auxLarger, lcm;
+
+            if (a > b)
+            {
+                auxLarger = a;
+            } else
+            {
+                auxLarger = b;
+            }
+
+            while (true)
+            {
+                if ((auxLarger % a == 0) && (auxLarger % b == 0)) {
+                    lcm = auxLarger;
+                    break;
+                }
+
+                auxLarger++;
+            }
+            return lcm;
+        }
+
         public static List<int> calcFactorization(int a)
         {
             var primes = new List<int>();
@@ -52,7 +76,7 @@ namespace calculadora_cs
             Console.Clear();
             Console.Write("Calculadora de Console em C# \n---------------------------------\n");
 
-            if (auxChoice >= 1 && auxChoice <= 4)
+            if (auxChoice >= 1 && auxChoice <= 5)
             {
                 Console.Write("Insira o primeiro valor: ");
                 double auxA = Convert.ToDouble(Console.ReadLine());
@@ -71,11 +95,14 @@ namespace calculadora_cs
                 } else if (auxChoice == 4)
                 {
                     Console.WriteLine("\nO resultado é: " + calcMultiply(auxA, auxB));
+                } else if (auxChoice == 5)
+                {
+                    Console.WriteLine("\nO resultado é: " + calcLcm(Convert.ToInt32(auxA), Convert.ToInt32(auxB)));
                 }
                 
                 Console.Write("\nPressione qualquer tecla para continuar");
                 Console.ReadKey();
-            } else if (auxChoice == 5)
+            } else if (auxChoice == 6)
             {
                 Console.Write("Insira o valor: ");
                 int auxA = Convert.ToInt32(Console.ReadLine());
@@ -96,7 +123,7 @@ namespace calculadora_cs
             Console.Write("Calculadora de Console em C# \n---------------------------------\n");
             Console.WriteLine("1 - Soma    2 - Subtração");
             Console.WriteLine("3 - Divisão 4 - Multiplicação");
-            Console.WriteLine("5 - Fatoração");
+            Console.WriteLine("5 - MMC  6 - Fatoração");
             Console.Write("\nSelecione uma opção: ");
             
             interfaceCalculation(Console.ReadKey().KeyChar);
