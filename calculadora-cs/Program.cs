@@ -88,7 +88,10 @@ namespace calculadora_cs
             Console.Clear();
             Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
 
-            Console.Title = listArray[auxChoice -1];
+            if (auxChoice != 0)
+            {
+                Console.Title = listArray[auxChoice - 1];
+            }
 
             if (auxChoice >= 1 && auxChoice <= 5)
             {
