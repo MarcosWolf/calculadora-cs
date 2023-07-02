@@ -82,9 +82,13 @@ namespace calculadora_cs
 
         public static void interfaceCalculation(char menuChoice)
         {
+            string[] listArray = { "Soma", "Subtração", "Divisão", "Multiplicação", "MMC", "Fatoração", "Potenciação", "Radiciação" };
+
             int auxChoice = (int)Char.GetNumericValue(menuChoice);
             Console.Clear();
             Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
+
+            Console.Title = listArray[auxChoice -1];
 
             if (auxChoice >= 1 && auxChoice <= 5)
             {
@@ -161,6 +165,7 @@ namespace calculadora_cs
 
         public static void interfaceMenu()
         {
+            Console.Title = "Menu";
             Console.Clear();
             Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
             Console.WriteLine("1 - Soma          2 - Subtração");
