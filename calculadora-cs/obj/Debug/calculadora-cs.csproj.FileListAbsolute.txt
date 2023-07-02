@@ -6,3 +6,11 @@ C:\Users\marco\source\repos\calculadora-cs\calculadora-cs\obj\Debug\calculadora-
 C:\Users\marco\source\repos\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.csproj.CoreCompileInputs.cache
 C:\Users\marco\source\repos\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.exe
 C:\Users\marco\source\repos\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.pdb
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Debug\calculadora-cs.exe.config
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Debug\calculadora-cs.exe
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Debug\calculadora-cs.pdb
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.csproj.AssemblyReference.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.csproj.SuggestedBindingRedirects.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.csproj.CoreCompileInputs.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.exe
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Debug\calculadora-cs.pdb
