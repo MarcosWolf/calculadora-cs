@@ -1,0 +1,8 @@
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Release\calculadora-cs.exe.config
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Release\calculadora-cs.exe
+C:\Projetos\cs\calculadora-cs\calculadora-cs\bin\Release\calculadora-cs.pdb
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Release\calculadora-cs.csproj.AssemblyReference.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Release\calculadora-cs.csproj.SuggestedBindingRedirects.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Release\calculadora-cs.csproj.CoreCompileInputs.cache
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Release\calculadora-cs.exe
+C:\Projetos\cs\calculadora-cs\calculadora-cs\obj\Release\calculadora-cs.pdb
