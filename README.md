@@ -19,6 +19,8 @@ calculadora-cs.exe
 
 ## Como usar o projeto
 Use o teclado numérico para escolher uma função matemática e insira os dados solicitados conforme a operação.
+
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/26293082/250370887-d0c3acc3-c365-4cf1-a9ff-695ba1df44e7.png" alt="Exemplo 1" width="70%">
+
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/26293082/250371025-a73dabbf-9a61-4b23-b719-18d3a53bb52d.png" alt="Exemplo 2" width="70%">
 
