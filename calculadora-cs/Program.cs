@@ -124,6 +124,7 @@ namespace calculadora_cs
             Console.WriteLine("1 - Soma    2 - Subtração");
             Console.WriteLine("3 - Divisão 4 - Multiplicação");
             Console.WriteLine("5 - MMC  6 - Fatoração");
+            Console.WriteLine("0 - Sair");
             Console.Write("\nSelecione uma opção: ");
             
             interfaceCalculation(Console.ReadKey().KeyChar);
