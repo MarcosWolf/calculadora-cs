@@ -70,11 +70,16 @@ namespace calculadora_cs
             return primes;
         }
 
+        public static double calcPotentiation(double a, double b)
+        {
+            return Math.Pow(a, b);
+        }
+
         public static void interfaceCalculation(char menuChoice)
         {
             int auxChoice = (int)Char.GetNumericValue(menuChoice);
             Console.Clear();
-            Console.Write("Calculadora de Console em C# \n---------------------------------\n");
+            Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
 
             if (auxChoice >= 1 && auxChoice <= 5)
             {
@@ -114,17 +119,32 @@ namespace calculadora_cs
 
                 Console.Write("\nPressione qualquer tecla para continuar");
                 Console.ReadKey();
+            } else if (auxChoice == 7)
+            {
+                Console.Write("Insira a base: ");
+                double auxA = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Insira o expoente: ");
+                double auxB = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("\nO resultado é:" + calcPotentiation(auxA, auxB));
+
+                Console.Write("\nPressione qualquer tecla para continuar");
+                Console.ReadKey();
+            } else if (auxChoice == 0)
+            {
+                System.Environment.Exit(1);
             }
         }
 
         public static void interfaceMenu()
         {
             Console.Clear();
-            Console.Write("Calculadora de Console em C# \n---------------------------------\n");
-            Console.WriteLine("1 - Soma    2 - Subtração");
-            Console.WriteLine("3 - Divisão 4 - Multiplicação");
-            Console.WriteLine("5 - MMC  6 - Fatoração");
-            Console.WriteLine("0 - Sair");
+            Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
+            Console.WriteLine("1 - Soma          2 - Subtração");
+            Console.WriteLine("3 - Divisão       4 - Multiplicação");
+            Console.WriteLine("5 - MMC           6 - Fatoração");
+            Console.WriteLine("7 - Potenciação   8 - Radiciação");
+            Console.WriteLine("\n0 - Sair");
             Console.Write("\nSelecione uma opção: ");
             
             interfaceCalculation(Console.ReadKey().KeyChar);
