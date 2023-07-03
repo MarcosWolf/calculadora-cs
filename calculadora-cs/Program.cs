@@ -88,13 +88,9 @@ namespace calculadora_cs
             Console.Clear();
             Console.Write("Calculadora de Console em C# \n-------------------------------------\n");
 
-            if (auxChoice != 0)
-            {
-                Console.Title = listArray[auxChoice - 1];
-            }
-
             if (auxChoice >= 1 && auxChoice <= 5)
             {
+                Console.Title = listArray[auxChoice - 1];
                 Console.Write("Insira o primeiro valor: ");
                 double auxA = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Insira o segundo valor: ");
@@ -121,6 +117,7 @@ namespace calculadora_cs
                 Console.ReadKey();
             } else if (auxChoice == 6)
             {
+                Console.Title = listArray[auxChoice - 1];
                 Console.Write("Insira o valor: ");
                 int auxA = Convert.ToInt32(Console.ReadLine());
 
@@ -133,6 +130,7 @@ namespace calculadora_cs
                 Console.ReadKey();
             } else if (auxChoice == 7)
             {
+                Console.Title = listArray[auxChoice - 1];
                 Console.Write("Insira a base: ");
                 double auxA = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Insira o expoente: ");
@@ -144,6 +142,7 @@ namespace calculadora_cs
                 Console.ReadKey();
             } else if (auxChoice == 8)
             {
+                Console.Title = listArray[auxChoice - 1];
                 Console.Write("Insira o índice: ");
                 double auxA = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Insira o radicando: ");
