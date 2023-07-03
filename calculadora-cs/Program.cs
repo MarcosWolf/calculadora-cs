@@ -91,67 +91,112 @@ namespace calculadora_cs
             if (auxChoice >= 1 && auxChoice <= 5)
             {
                 Console.Title = listArray[auxChoice - 1];
-                Console.Write("Insira o primeiro valor: ");
-                double auxA = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Insira o segundo valor: ");
-                double auxB = Convert.ToDouble(Console.ReadLine());
 
-                if (auxChoice == 1)
+                try
                 {
-                    Console.WriteLine("\nO resultado é: " + calcSum(auxA, auxB));
-                } else if (auxChoice == 2)
-                {
-                    Console.WriteLine("\nO resultado é: " + calcSubtract(auxA, auxB));
-                } else if (auxChoice == 3)
-                {
-                    Console.WriteLine("\nO resultado é: " + calcDivide(auxA, auxB));
-                } else if (auxChoice == 4)
-                {
-                    Console.WriteLine("\nO resultado é: " + calcMultiply(auxA, auxB));
-                } else if (auxChoice == 5)
-                {
-                    Console.WriteLine("\nO resultado é: " + calcLcm(Convert.ToInt32(auxA), Convert.ToInt32(auxB)));
+                    Console.Write("Insira o primeiro valor: ");
+                    double auxA = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Insira o segundo valor: ");
+                    double auxB = Convert.ToDouble(Console.ReadLine());
+
+                    if (auxChoice == 1)
+                    {
+                        Console.WriteLine("\nO resultado é: " + calcSum(auxA, auxB));
+                    }
+                    else if (auxChoice == 2)
+                    {
+                        Console.WriteLine("\nO resultado é: " + calcSubtract(auxA, auxB));
+                    }
+                    else if (auxChoice == 3)
+                    {
+                        Console.WriteLine("\nO resultado é: " + calcDivide(auxA, auxB));
+                    }
+                    else if (auxChoice == 4)
+                    {
+                        Console.WriteLine("\nO resultado é: " + calcMultiply(auxA, auxB));
+                    }
+                    else if (auxChoice == 5)
+                    {
+                        Console.WriteLine("\nO resultado é: " + calcLcm(Convert.ToInt32(auxA), Convert.ToInt32(auxB)));
+                    }
                 }
-                
-                Console.Write("\nPressione qualquer tecla para continuar");
-                Console.ReadKey();
+                catch(Exception e)
+                {
+                    Console.Write("\nValor inserido incorretamente");
+                }
+                finally
+                {
+                    Console.Write("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
+
+                }
+               
             } else if (auxChoice == 6)
             {
                 Console.Title = listArray[auxChoice - 1];
-                Console.Write("Insira o valor: ");
-                int auxA = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("\nO resultado é: ");
-                foreach (int fatora in calcFactorization(auxA)) {
-                    Console.WriteLine(fatora);
+                try
+                {
+                    Console.Write("Insira o valor: ");
+                    int auxA = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("\nO resultado é: ");
+                    foreach (int fatora in calcFactorization(auxA))
+                    {
+                        Console.WriteLine(fatora);
+                    }
                 }
-
-                Console.Write("\nPressione qualquer tecla para continuar");
-                Console.ReadKey();
+                catch (Exception e)
+                {
+                    Console.Write("\nValor inserido incorretamente");
+                }
+                finally
+                {
+                    Console.Write("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
+                }
             } else if (auxChoice == 7)
             {
                 Console.Title = listArray[auxChoice - 1];
-                Console.Write("Insira a base: ");
-                double auxA = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Insira o expoente: ");
-                double auxB = Convert.ToDouble(Console.ReadLine());
+                try
+                {
+                    Console.Write("Insira a base: ");
+                    double auxA = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Insira o expoente: ");
+                    double auxB = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("\nO resultado é: " + calcPotentiation(auxA, auxB));
-
-                Console.Write("\nPressione qualquer tecla para continuar");
-                Console.ReadKey();
+                    Console.WriteLine("\nO resultado é: " + calcPotentiation(auxA, auxB));
+                }
+                catch(Exception e)
+                {
+                    Console.Write("\nValor inserido incorretamente");
+                } 
+                finally
+                {
+                    Console.Write("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
+                }
             } else if (auxChoice == 8)
             {
                 Console.Title = listArray[auxChoice - 1];
-                Console.Write("Insira o índice: ");
-                double auxA = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Insira o radicando: ");
-                double auxB = Convert.ToDouble(Console.ReadLine());
+                try
+                {
+                    Console.Write("Insira o índice: ");
+                    double auxA = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Insira o radicando: ");
+                    double auxB = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("\nO resultado é: " + calcRooting(auxA, auxB));
-
-                Console.Write("\nPressione qualquer tecla para continuar");
-                Console.ReadKey();
+                    Console.WriteLine("\nO resultado é: " + calcRooting(auxA, auxB));
+                }
+                catch (Exception e)
+                {
+                    Console.Write("\nValor inserido incorretamente");
+                }
+                finally
+                {
+                    Console.Write("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
+                }
             } else if (auxChoice == 0)
             {
                 System.Environment.Exit(1);
